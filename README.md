@@ -2,6 +2,7 @@
 This is first version of remote repositories but this is second version of local repositories.
 You can download this zip, you can modify, play and more.
 This is my first remote repositories in my life.
+To play, you should use "main.py"
 # Story
 Stickman after another day of work goes home without wearing an umbrella,
 thinking that it will not rain and not seeing blood in the window,
