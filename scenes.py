@@ -113,9 +113,10 @@ def main_menu():
                 if event.button == 1: 
                     if button.RECT.collidepoint(pos):
                         main = False
-                        firstlevel()
-                        save.saves["levels"] = "first_level"
-                        save.create_Json("saves.json",save.saves)
+                        if save.saves["levels"] == "first_level":
+                            firstlevel()
+                        else:
+                            error()
         fps.tick(30)
         pygame.display.flip()
 def firstlevel():
