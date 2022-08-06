@@ -134,6 +134,13 @@ def firstlevel():
         height = save.config["height"],
         name_img = ("texture/sky/sky_rain.png")
     )
+    tutorial = image.image(
+        x = 70,
+        y = 100,
+        width = 205,
+        height = 106,
+        name_img = ("texture/tutorial.png")
+    )
     stickman = image.image(
         x = 20,
         y = 400,
@@ -148,9 +155,13 @@ def firstlevel():
         height = save.config["height"],
         name_img = ("texture/rain/1.png")
     )
+    time_tutorial = 0
     while main:
         sky.show(game)
         rain.show(game)
+        time_tutorial += 1
+        if time_tutorial <= 100:
+            tutorial.show(game)
         rain.animation_rain()
         stickman.show(game)
         stickman.move(2)
