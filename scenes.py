@@ -12,6 +12,7 @@ if save.config["fullscreen"] == 1:
 else:
     game = pygame.display.set_mode((save.config["width"],save.config["height"]))
 def scene():
+    print("Test")
     fps = pygame.time.Clock()
     main = True
     while main:
@@ -21,6 +22,7 @@ def scene():
         fps.tick(30)
         pygame.display.flip()
 def error():
+    print("Error")
     fps = pygame.time.Clock()
     main = True
     error_thinking = image.image(
@@ -68,6 +70,7 @@ def error():
         fps.tick(30)
         pygame.display.flip()
 def main_menu():
+    print("Main Menu")
     fps = pygame.time.Clock()
     main = True
     main_music = sound.music("sound/main.wav")
@@ -120,6 +123,7 @@ def main_menu():
         fps.tick(30)
         pygame.display.flip()
 def firstlevel():
+    print("First Level map_1")
     fps = pygame.time.Clock()
     main = True
     #main_music = sound.music("sound/main.wav")
@@ -181,6 +185,7 @@ def firstlevel():
         fps.tick(30)
         pygame.display.flip()
 def firstlevel_n1():
+    print("First Level map_2")
     fps = pygame.time.Clock()
     main = True
     #main_music = sound.music("sound/main.wav")
