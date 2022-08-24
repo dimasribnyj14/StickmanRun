@@ -64,7 +64,7 @@ def error():
             if event.type == pygame.MOUSEBUTTONDOWN:
                 if event.button == 1:
                     if blit.colliderect(blit):
-                        save.saves["levels"] = "main_menu"
+                        save.saves["levels"] = "first_level"
                         save.create_Json("saves.json",save.saves)
                         main = False
         fps.tick(30)
@@ -236,3 +236,6 @@ def firstlevel_n1():
                 save.create_Json("saves.json",save.saves)
         fps.tick(30)
         pygame.display.flip()
+def House():
+    print("House")
+    fps = pygame.time.Clock()
